@@ -43,6 +43,15 @@ class PropertyMetadata extends BasePropertyMetadata {
   }
 
   /**
+   * Set column label
+   *
+   * @parame string
+   */
+  public function setColumnLabel($columnLabel) {
+    $this->columnlabel = $columnLabel;
+  }
+
+  /**
    * Get form label
    *
    * @return mixed
@@ -52,12 +61,30 @@ class PropertyMetadata extends BasePropertyMetadata {
   }
 
   /**
+   * Set form label
+   *
+   * @parame string
+   */
+  public function setFormLabel($formLabel) {
+    $this->formlabel = $formLabel;
+  }
+
+  /**
    * Get excluded ops
    *
    * @return mixed
    */
   public function getExcludedOps() {
     return $this->excludedops;
+  }
+
+  /**
+   * Set excluded ops
+   *
+   * @parame string
+   */
+  public function setExcludedOps($excludedOps) {
+    $this->excludedops = $excludedOps;
   }
 
   /**
