@@ -1,9 +1,9 @@
 <?php
-namespace PortalFlare\Bundle\MetadataBundle;
+namespace PortalFlare\MetadataBundle;
 
 /**
  * Class MetadataAnnotation
- * @package PortalFlare\Bundle\MetadataBundle
+ * @package PortalFlare\MetadataBundle
  *
  * @Annotation
  *

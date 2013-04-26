@@ -1,5 +1,5 @@
 <?php
-namespace PortalFlare\Bundle\MetadataBundle;
+namespace PortalFlare\MetadataBundle;
 
 use Metadata\MetadataFactoryInterface;
 

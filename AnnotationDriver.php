@@ -1,10 +1,10 @@
 <?php
-namespace PortalFlare\Bundle\MetadataBundle;
+namespace PortalFlare\MetadataBundle;
 
 use Metadata\Driver\DriverInterface;
 use Metadata\MergeableClassMetadata;
 use Doctrine\Common\Annotations\Reader;
-use PortalFlare\Bundle\MetadataBundle\PropertyMetadata;
+use PortalFlare\MetadataBundle\PropertyMetadata;
 
 class AnnotationDriver implements DriverInterface {
   private $reader;
@@ -19,7 +19,7 @@ class AnnotationDriver implements DriverInterface {
     foreach ($class->getProperties() as $reflectionProperty) {
       $propertyMetadata = new PropertyMetadata($class->getName(), $reflectionProperty->getName());
 
-      $annotation = $this->reader->getPropertyAnnotation($reflectionProperty, 'PortalFlare\\Bundle\\MetadataBundle\\MetadataAnnotation');
+      $annotation = $this->reader->getPropertyAnnotation($reflectionProperty, 'PortalFlare\\MetadataBundle\\MetadataAnnotation');
 
       if (null !== $annotation) {
         $propertyMetadata->setFilterable($annotation->getFilterable());
