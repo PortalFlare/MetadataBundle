@@ -1,0 +1,25 @@
+{
+	"name":  "portalflare/metadata-bundle",
+	"type": "symfony-bundle",
+	"description": "Annotation handling for Symfony2 entity metadata",
+	"keywords": ["metadata", "annotation", "bundle"],
+	"homepage": "http://github.com/PortalFlare/TestBundle",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "David Sands",
+			"email": "dsands@portalflare.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2"
+	},
+	"require-dev": {
+		"symfony/framework-bundle": ">=2.2"
+	},
+	"autoload": {
+		"psr-0": { "PortalFlare\\MetadataBundle": "" }
+	},
+	"minimum-stability": "dev",
+	"target-dir": "PortalFlare/MetadataBundle"
+}
