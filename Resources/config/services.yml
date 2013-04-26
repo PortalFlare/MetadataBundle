@@ -1,0 +1,23 @@
+parameters:
+    portal_flare_metadata.metadata_factory.class: Metadata\MetadataFactory
+    portal_flare_metadata.annotation_driver.class: PortalFlare\Bundle\MetadataBundle\AnnotationDriver
+    portal_flare_metadata.metadata_processor.class: PortalFlare\Bundle\MetadataBundle\MetadataProcessor
+    portal_flare_metadata.metadata_cache.class: Metadata\Cache\FileCache
+services:
+    portal_flare_metadata.metadata.annotation_driver:
+        class: %portal_flare_metadata.annotation_driver.class%
+        arguments: [ @annotation_reader ]
+        public: false
+    portal_flare_metadata.metadata_factory:
+        class: %portal_flare_metadata.metadata_factory.class%
+        arguments: [ @portal_flare_metadata.metadata.annotation_driver ]
+        public: false
+        calls:
+            - [ setCache, [ @portal_flare_metadata.metadata.cache ] ]
+    portal_flare_metadata.metadata.metadata_processor:
+        class: %portal_flare_metadata.metadata_processor.class%
+        arguments: [ @portal_flare_metadata.metadata_factory ]
+    portal_flare_metadata.metadata.cache:
+        class: %portal_flare_metadata.metadata_cache.class%
+        public: false
+        arguments: [ dummy ]
