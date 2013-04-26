@@ -1,6 +1,6 @@
 <?php
 
-namespace PortalFlare\Bundle\MetadataBundle\DependencyInjection;
+namespace PortalFlare\MetadataBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
