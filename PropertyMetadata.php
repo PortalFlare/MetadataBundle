@@ -5,7 +5,7 @@ use Metadata\PropertyMetadata as BasePropertyMetadata;
 
 /**
  * Class PropertyMetadata
- * @package PortalFlare\Bundle\MetadataBundle
+ * @package PortalFlare\MetadataBundle
  *
  */
 
