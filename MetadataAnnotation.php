@@ -45,7 +45,7 @@ class MetadataAnnotation {
    * @return mixed
    */
   public function getColumnLabel() {
-    return $this->filterable;
+    return $this->columnlabel;
   }
 
   /**
@@ -54,7 +54,7 @@ class MetadataAnnotation {
    * @return mixed
    */
   public function getFormLabel() {
-    return $this->filterable;
+    return $this->formlabel;
   }
 
   /**
@@ -63,7 +63,7 @@ class MetadataAnnotation {
    * @return mixed
    */
   public function getExcludedOps() {
-    return $this->filterable;
+    return $this->excludedops;
   }
 
 
