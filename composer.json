@@ -3,7 +3,7 @@
 	"type": "symfony-bundle",
 	"description": "Annotation handling for Symfony2 entity metadata",
 	"keywords": ["metadata", "annotation", "bundle"],
-	"homepage": "http://github.com/PortalFlare/TestBundle",
+	"homepage": "http://github.com/PortalFlare/MetadataBundle",
 	"license": "MIT",
 	"authors": [
 		{
