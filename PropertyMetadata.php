@@ -11,6 +11,7 @@ use Metadata\PropertyMetadata as BasePropertyMetadata;
 
 class PropertyMetadata extends BasePropertyMetadata {
   protected $filterable;
+  protected $readonly;
   protected $columnlabel;
   protected $formlabel;
   protected $excludedops;
@@ -31,6 +32,24 @@ class PropertyMetadata extends BasePropertyMetadata {
    */
   public function setFilterable($filterable) {
     $this->filterable = $filterable;
+  }
+
+  /**
+   * Get readonly
+   *
+   * @return mixed
+   */
+  public function getReadonly() {
+    return $this->readonly;
+  }
+
+  /**
+   * Set readonly
+   *
+   * @param $readonly
+   */
+  public function setReadonly($readonly) {
+    $this->readonly = $readonly;
   }
 
   /**
