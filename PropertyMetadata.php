@@ -116,6 +116,7 @@ class PropertyMetadata extends BasePropertyMetadata {
       $this->class,
       $this->name,
       $this->filterable,
+      $this->readonly,
       $this->columnlabel,
       $this->formlabel,
       $this->excludedops,
@@ -128,7 +129,7 @@ class PropertyMetadata extends BasePropertyMetadata {
    * @param string $str
    */
   public function unserialize($str) {
-    list($this->class, $this->name, $this->filterable, $this->columnlabel, $this->formlabel, $this->excludedops) = unserialize($str);
+    list($this->class, $this->name, $this->filterable, $this->readonly, $this->columnlabel, $this->formlabel, $this->excludedops) = unserialize($str);
 
     $this->reflection = new \ReflectionProperty($this->class, $this->name);
     $this->reflection->setAccessible(true);
