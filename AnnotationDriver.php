@@ -23,6 +23,7 @@ class AnnotationDriver implements DriverInterface {
 
       if (null !== $annotation) {
         $propertyMetadata->setFilterable($annotation->getFilterable());
+        $propertyMetadata->setReadonly($annotation->getReadonly());
         $propertyMetadata->setColumnLabel($annotation->getColumnLabel());
         $propertyMetadata->setFormLabel($annotation->getFormLabel());
         $propertyMetadata->setExcludedOps($annotation->getExcludedOps());
