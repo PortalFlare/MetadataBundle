@@ -11,6 +11,7 @@ namespace PortalFlare\MetadataBundle;
 
 class MetadataAnnotation {
   protected $filterable;
+  protected $readonly;
   protected $columnlabel;
   protected $formlabel;
   protected $excludedops;
@@ -37,6 +38,15 @@ class MetadataAnnotation {
    */
   public function getFilterable() {
     return $this->filterable;
+  }
+
+  /**
+   * Get readonly
+   *
+   * @return mixed
+   */
+  public function getReadonly() {
+    return $this->readonly;
   }
 
   /**
