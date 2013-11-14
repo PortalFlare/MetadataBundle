@@ -11,3 +11,4 @@ Usage:
 
 Current supported Metadata:
   filterable
+  readonly
